@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Wedding Invitation</title>
+</head>
+<body>
+    <!------------ COVER ---------->
+    <div id="cover">
+        <div id="cover-text">
+            <p>The Wedding of</p>
+            <h1>Heeseung<br>&<br>Amel</h1><br>
+            <p>Minggu, 31 Desember 2024</p><br><br><br>
+            <p>Kepada Yth.</p><br>
+            <h3><u>Nabila & Partner</u></h3>
+            <p>di Tempat</p><br><br>
+            <button class="btn" onclick="openInvitation(), putarMusik()">Open Invitation</button><br>
+        </div>
+        <img class="img-l-top" src="assets/images/elemen1.png" alt="">
+        <img class="img-l-bottom" src="assets/images/elemen1.png" alt="">
+        <img class="img-r-top" src="assets/images/elemen1.png" alt="">
+        <img class="img-r-bottom" src="assets/images/elemen1.png" alt="">
+    </div>
+
+    <!---------- INTRO ---------->
+    <div id="isi">
+        <div id="intro" class="box-full2">
+            <div class="container-bingkai">
+                <img src="assets/images/intro-bingkai.png" class="intro-bingkai">
+                <img src="assets/images/intro-foto.png" class="intro-foto">
+            </div>
+            <img src="assets/images/elemen2.png" class="elemen2-r">
+            <img src="assets/images/elemen2.png" class="elemen2-l">
+        </div>
+
+        <!------------ AUDIO ----------->
+        <div id="kotakmusik">
+            <audio id="musik" loop autoplay>
+                <source src="assets/audio/backsound.mp3" type="audio/mp3">
+            </audio>
+            <div id="ctrlmusik" onclick="putarMusik()">
+                <img src="assets/images/musikon.png" id="imgmusik" alt="musik">
+            </div>
+        </div>
+        <!---------- NAVIGASI ---------->
+        <nav id="nav">
+            <ul>
+                <li><a href="#profile"><img src="assets/images/icon-profile.png" width="20"></a></li>
+                <li><a href="#tanggal"><img src="assets/images/icon-tanggal.png" width="20"></a></li>
+                <li><a href="#galeri"><img src="assets/images/icon-galeri.png" width="20"></a></li>
+                <li><a href="#rsvp"><img src="assets/images/icon-rsvp.png" width="20"></a></li>
+                <li><a href="#hadiah"><img src="assets/images/icon-hadiah.png" width="20"></a></li>
+                <li><a href="#pesan"><img src="assets/images/icon-pesan.png" width="20"></a></li>
+            </ul>
+        </nav>
+
+        <!--------- QUOTES ---------->
+        <section id="quotes" class="box-full">
+            <img src="assets/images/elemen5.png" class="elemen-t-quotes">
+            <img src="assets/images/elemen5.png" class="elemen-b-quotes">
+            <img src="assets/images/ornamen1.png" class="ornamen1">
+            <img src="assets/images/ornamen1.png" class="ornamen2">
+            <div class="quotes-text">
+                <h4>وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ 
+                مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</h4><br>
+                <p>Artinya: “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+                untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa 
+                tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. 
+                Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi 
+                kaum yang berpikir”<br> (QS. Ar Rum: 21).</p>
+            </div>
+        </section>
+
+        <!--------- PROFILE ---------->
+        <section id="profile" class="box-full3">
+            <h2>The Wedding of</h2><br><br><br><br>
+            <div class="profile-pasangan">
+                <div id="profile-pria">
+                    <div class="icon">
+                        <img src="assets/images/icon-ig.png">
+                        <a href="https://www.instagram.com/enhypen?igsh=amk1dzduZTRhZXRu">@lee_heeseung</a><br><br>
+                    </div>
+                    <img src="assets/images/foto-pria.png" class="foto-pria">
+                    <img src="assets/images/elemen3.png" class="elemen-l-p">
+                    <img src="assets/images/elemen4.png" class="elemen-r-p">
+                    <br><br><br>
+                    <div class="profile-text">
+                        <h1>Lee Heeseung</h1><br>
+                        <center><hr width="250px" color="black"></center><br>
+                        <p>Putra pertama dari<br>Bapak Cha Eunwoo dan<br>Ibu Bae Irene</p><br>
+                        <center><hr width="250px" color="black"></center><br>
+                    </div>
+                </div>
+                <img src="assets/images/ampersand.png" class="dan">
+                <div id="profile-wanita">
+                    <div class="icon">
+                        <img src="assets/images/icon-ig.png">
+                        <a href="https://www.instagram.com/whoai.mel?igsh=NDB5ZGEzMGt5MGtq">@whoai.mel</a><br><br>
+                    </div>
+                    <img src="assets/images/foto-wanita.png" class="foto-wanita">
+                    <img src="assets/images/elemen3.png" class="elemen-l-w">
+                    <img src="assets/images/elemen4.png" class="elemen-r-w">
+                    <br><br><br>
+                    <div class="profile-text">
+                        <h1>Amelia Putri</h1><br>
+                        <center><hr width="250px" color="black"></center><br>
+                        <p>Putri keempat dari<br>Bapak Moh. Ilyas dan<br>Ibu Susanah</p><br>
+                        <center><hr width="250px" color="black"></center><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------- TANGGAL DAN LOKASI ---------->
+        <section id="tanggal" class="box-full4">
+            <h2>Save the Date!</h2>
+            <div id="kotak1">
+                <div class="kotak2">
+                    <div class="kotak-text">
+                        <h3>Akad</h3><br><br>
+                        <p class="tanggal">Sabtu, 12 September 2025</p><br>
+                        <div class="waktu">
+                            <img src="assets/images/icon-waktu.png">
+                            <p>09.00 WIB - selesai</p><br><br>
+                        </div>
+                        <p class="alamat">Jln. Bintara 13 RT3/RW13, Bintara, Bekasi Barat, Kota Bekasi</p><br><br>
+                        <button class="btn-akad"><a href="https://maps.app.goo.gl/MvjF316xu3Cpwb8w5">Lihat lokasi</a></button><br><br><br>
+                        <center><hr width="250px" color="black"></center>
+                    </div>
+                
+                    <div class="kotak-text">
+                        <h3>Resepsi</h3><br><br>
+                        <p class="tanggal">Minggu, 29 Oktober 2025</p><br>
+                        <div class="waktu">
+                            <img src="assets/images/icon-waktu.png">
+                            <p>10.00 WIB - selesai</p><br><br>
+                        </div>                       
+                        <p class="alamat">Jln. Kenangan RT4/RW10, Bintara, Seoul, Korea Selatan</p><br><br>
+                        <button class="btn-akad"><a href="https://maps.app.goo.gl/sVRWdbvZ4RbBC6Xt5">Lihat lokasi</a></button>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.235158609545!2d106.96061220000004!3d-6.232700199999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c61bda8aa73%3A0xd7bc389a9cf85fa1!2sJl.%20Bintara%2013%2C%20RW.013%2C%20Bintara%2C%20Kec.%20Bekasi%20Bar.%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017134!5e0!3m2!1sid!2sid!4v1726208324141!5m2!1sid!2sid"
+            width="500" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </section>
+
+        <!--------- GALERI ---------->
+        <section id="galeri" class="box-full4">
+            <img src="assets/images/elemen6.png" class="elemen-galeri-r">
+            <img src="assets/images/elemen6.png" class="elemen-galeri-l">
+            <h2>Momen yang<br>Berharga</h2>
+            <p>Cinta adalah satu-satunya kebebasan di dunia karena ia begitu tinggi mengangkat jiwa,<br> 
+            di mana hukum-hukum kemanusiaan dan kenyataan alam tidak mampu menemukan jejaknya.</p>
+            <div class="galeri-container">
+                <div class="galeri">
+                <img src="assets/images/galeri1.jpg">
+                <img src="assets/images/galeri2.jpg">
+                <img src="assets/images/galeri3.jpg">
+                </div>
+                <div class="galeri">
+                <img src="assets/images/galeri4.jpg">
+                <img src="assets/images/galeri5.jpg">
+                <img src="assets/images/galeri6.jpg">
+                </div>
+            </div>
+            <video autoplay loop muted>
+                <source src="assets/video/video.mp4" type="video/mp4"><br><br>
+            </video>
+        </section>
+
+        <!--------- STORY  ---------->
+        <div id="story" class="box-full">
+            <img src="assets/images/elemen6.png" class="elemen-story-br">
+            <img src="assets/images/elemen6.png" class="elemen-story-bl">
+            <h2>Our  Love  Story</h2><br>
+            <div class="container-story">
+                <div class="kotak-story">
+                    <div class="isi-story">
+                        <img src="assets/images/story1.jpg">
+                        <p class="th2022"><b>2022</b><br>Awal pertemuan dan pertemanan</h5>
+                    </div>
+                </div>
+                <div class="kotak-story">
+                    <div class="isi-story">
+                        <img src="assets/images/story2.jpg">
+                        <p class="th2023"><b>2023</b><br>Pertama kali<br>berkencan sebagai<br> pasangan kekasih</h5>
+                    </div>
+                </div>
+                <div class="kotak-story">
+                    <div class="isi-story">
+                        <img src="assets/images/story3.jpg">
+                        <p class="th2024"><b>2024</b><br>Tunangan dan<br>menikah</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------- TURUT MENGUNDANG ---------->
+        <div id="tamu" class="box-full2">
+            <h2>Turut Mengundang</h2><br><br>
+            <table>
+                <tr>
+                    <th rowspan="2"><center>Nama Tamu</center></th>
+                    <th rowspan="2"><center>Jabatan</center></th>
+                    <th colspan="2"><center>Detail</center></th>
+                </tr>
+                <tr>
+                    <th><center>Alamat</center></th>
+                    <th><center>Email</center></th>
+                </tr>
+                <tr>
+                    <td>Dadang Kusnadi</td>
+                    <td>Ketua RW 13</td>
+                    <td rowspan="2"><center>Bintara 13</center></td>
+                    <td>dadang@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Fajar Ibrahim</td>
+                    <td>Ketua RT 03</td>
+                    <td>ibrahim@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Park Jiwon</td>
+                    <td>CEO Hybe</td>
+                    <td>Soul</td>
+                    <td>jiwonp@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Kim Taeho</td>
+                    <td>CEO Belift</td>
+                    <td>Daegu</td>
+                    <td>taeho@gmail.com</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Keluarga besar mempelai</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--------- RSVP ---------->
+        <div id="rsvp" class="box-full5">
+            <div class="rsvp-text">
+                <h2>Rsvp</h2><br>
+                <p>Kehadiran kalian akan sangat<br>berharga bagi kami</p><br>
+                <button onclick="showRSVPForm()">Konfirmasi Kehadiran</button>
+            </div>
+        </div>
+    
+        <!-- Form RSVP yang disembunyikan -->
+        <div id="rsvp-isi" class="box-full">
+            <div class="kotak-rsvp">
+                <h3>Konfirmasi Kehadiran</h3><br><br>
+                <form method="GET" action="">
+                    <!-- TextBox-->
+                    <div class="textbox">
+                        <label for="txtnama">Nama : </label>
+                        <input type="text" name="txtnama" id="txtnama" required class="rsvp-input">
+                    </div>
+                    <div class="textbox">
+                        <label for="txtemail">Email : </label>
+                        <input type="text" name="txtemail" id="txtemail" class="rsvp-input">
+                    </div>
+                    <div class="textbox">
+                        <label for="numtelp">No. Telp : </label>
+                        <input type="number" name="numtelp" id="numtelp" class="rsvp-inputtelp">
+                    </div>
+    
+                    <!-- Radio Button -->
+                    <div>
+                        <label>Kehadiran : </label>
+                        <div class="radiobtn">
+                            <input type="radio" value="hadir" name="status" id="statushadir" required>
+                            <label for="statushadir">Hadir</label>
+                        </div>
+                        <div class="radiobtn">
+                            <input type="radio" value="tidak hadir" name="status" id="statustidakhadir">
+                            <label for="statustidakhadir">Tidak Hadir</label>
+                        </div>
+                    </div>
+    
+                    <!-- Checkbox -->
+                    <label>Jenis Souvenir yang <br>Diinginkan : (maksimal 2)</label>
+                    <div class="checkbox">
+                        <input type="checkbox" value="mug" name="souvenir[]" id="mug">
+                        <label for="mug">Mug</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="ganci" name="souvenir[]" id="ganci">
+                        <label for="ganci">Gantungan Kunci</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="kipas" name="souvenir[]" id="kipas">
+                        <label for="kipas">Kipas</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="tani" name="souvenir[]" id="tani">
+                        <label for="tani">Tanaman Mini</label>
+                    </div>
+    
+                    <!-- Selectbox -->
+                    <label for="jumlahtamu">Jumlah Tamu :</label>
+                    <div class="selectbox">
+                        <select name="jumlahtamu" id="jumlahtamu" required>
+                            <option value="1orang">1 Orang</option>
+                            <option value="2orang">2 Orang</option>
+                            <option value="3orang">3 Orang</option>
+                            <option value="4orang">4 Orang</option>
+                            <option value="5orang">5 Orang</option>
+                            <option value=">5orang">> 5 Orang</option>
+                        </select>
+                    </div>
+    
+                    <!-- Textarea -->
+                    <div class="textaarea">
+                        <label for="pesantambahan">Catatan Tambahan : (Opsional)</label>
+                        <textarea name="pesantambahan" id="pesantambahan" cols="30" rows="5"></textarea><br><br>
+                    </div>
+    
+                    <!-- Submit Button -->
+                    <div>
+                        <input type="submit" name="button" value="submit" class="submitbtn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!--------- KIRIM HADIAH ---------->
+        <div id="hadiah" class="box-full">
+            <h2>Kirim Hadiah</h2><br>
+            <h4>Kamu bisa transfer ke rekening<br> di bawah ini:</h4>
+            <div id="container2kotak">
+                <div class="kotak-hadiah">
+                    <div class="text-hadiah">
+                        <h4>Bank Central Asia (BCA)</h4>
+                        <div class="rekening">
+                            <button onclick="salinKeKeyboard()" class="btn-salin">salin</button>
+                            <p id="norekening">0002224445556</p>
+                        </div>
+                        <p>Lee Heeseung</p><br>
+                        <img src="assets/images/icon-qr.png">
+                    </div>
+                </div>
+                <div class="kotak-hadiah">
+                    <div class="text-hadiah">
+                        <h4>Bank Rakyat Indonesia (BRI)</h4>
+                        <div class="rekening">
+                            <button onclick="salinKeKeyboard()" class="btn-salin">salin</button>
+                            <p id="norekening">1234567891234</p>
+                        </div>
+                        <p>Amelia Putri</p><br>
+                        <img src="assets/images/icon-qr.png">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--------- PESAN ---------->
+        <div id="pesan" class="box-full">
+            <h2>Pesan dan Doa</h2>
+                <div class="input-pesan">
+                    <form id="formPesan">
+                        <input type="text" name="nama" id="nama" placeholder="Nama" required class="nama-pesan"><br><br>
+                        <input type="text" name="alamat" id="alamat" placeholder="Alamat" required class="alamat-pesan"><br><br>
+                        <input type="text" name="pesan" id="pesanInput" placeholder="Pesan" required class="textbox-pesan"><br><br>
+                        <button type="submit" class="submit-pesan">Kirim</button>
+                    </form><br><br>
+                    <div id="tampilkanPesan"></div>
+                </div>
+            </div>
+        <!--------- TERIMA KASIH ---------->
+        <div id="terimakasih" class="box-full5">
+            <h1>Terimakasih</h1>
+            <p>Ditunggu<br>kehadirannya</p>
+            <img src="assets/images/elemen4.png" class="elemen-tq-l">
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

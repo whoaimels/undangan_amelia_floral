@@ -1,0 +1,1108 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*-------------------- COVER --------------------*/
+#cover{
+    background-image: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: block;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#cover-text{
+    text-align: center;
+    margin-left: -15px;
+    padding-top: 100px;
+}
+
+#cover-text h1{
+    font-family: Sail;
+    font-size: 50px;
+}
+
+#cover-text p{
+    font-family: Gabriela;
+    font-size: 15px;
+}
+
+#cover-text h3{
+    font-family: Elsie Swash Caps;
+    font-size: 18px;
+    opacity: (0.9);
+}
+
+.btn{
+    position: relative;
+    background-color: #FDCEDF;
+    font-family: Gabriela;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.btn:hover {background-color: #f7a1c1;}
+
+/* ELEMEN COVER */
+.img-l-top{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -110px;
+    top:-230px;
+    transform: scaleY(-1) rotate(40deg); 
+}
+
+.img-r-top{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -110px;
+    top:-230px;
+    transform: scaleY(-1) rotate(-40deg); 
+}
+
+.img-l-bottom {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -110px;
+    bottom:-30px;
+    transform:rotate(40deg); 
+}
+
+.img-r-bottom {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -110px;
+    bottom:-30px;
+    transform:rotate(-40deg); 
+}
+
+.img-l-top,.img-r-top,.img-l-bottom, .img-r-bottom {
+    animation: smoothSway 4s infinite ease-in-out; 
+    transform-origin: bottom center; 
+}
+
+/*-------------------- INTRO --------------------*/
+#ctrlmusik{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 3vh;
+    right: 3vw;
+    z-index: 10;
+}
+
+#imgmusik{
+    width: 80%;
+    height: 80%;
+}
+
+.box-full {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.box-full2 {
+    width: 100%;
+    height: 80vh;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.box-full3 {
+    width: 100%;
+    height: 240vh;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.box-full4 {
+    width: 100%;
+    height: 200vh;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.box-full5{
+    width: 100%;
+    height: 40vh;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+
+#isi{ 
+    display: none;
+}
+
+#intro{
+    background-image: url('../images/cover.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-bingkai{
+    margin-left: -110%;
+    margin-top: 40px;
+}
+.intro-bingkai{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+}
+
+.intro-foto{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+}
+
+#container-bingkai {
+    margin-left: -400px;
+    margin-top: 35px;
+}
+
+
+.elemen2-r{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    bottom: -35px;
+    right: -70px;
+    transform: scaleX(-1) rotate(-5deg);
+}
+
+.elemen2-l{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    bottom: -35px;
+    left: -70px;
+    transform:rotate(-5deg);
+}
+
+/*navigasi*/
+#nav{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    bottom: 5vh;
+    width: 100%;
+    z-index: 7;
+}
+
+#nav ul{
+    display: inline-block;
+    background-color: #FDCEDF;  
+    padding: 0px;
+    border-radius: 20px;
+} 
+
+#nav ul li{
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#nav ul li:hover{
+    background-color: #f7a1c1;
+    border-radius: 20px;
+}
+
+#nav img{
+    padding: -10px;
+}
+
+
+/*-------------------- QUOTES --------------------*/
+#quotes{
+    background-color: #FDE2E7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: block;
+    overflow: hidden;
+    position: relative;   
+}
+
+.elemen-t-quotes{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: -250px;
+    margin-top: -50px;
+    transform: scaleX(-1) rotate(-90deg);
+}
+
+.elemen-b-quotes{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-right: -50%;
+    margin-top: 120%;
+    transform: scaleX(-1) rotate(90deg);
+}
+
+.ornamen1{
+    width: 200px;
+    top: 5px;
+    position: absolute;
+    margin-left: -115px;
+
+}
+
+.ornamen2{
+    width: 200px;
+    bottom: 5px;
+    position: absolute;
+    margin-left: -115px;
+    transform: scaleY(-1);
+}
+
+.quotes-text{
+    position: relative;
+    font-size: 20px;
+    padding: 50px;
+    padding-left: 20px;
+    margin-top: 125px;
+    color: #921A40;
+}
+
+/*-------------------- PROFILE --------------------*/
+#profile{
+    background-image: url("../images/bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: block;
+    position: relative; 
+    overflow:hidden; 
+}
+
+#profile h2{
+    font-family: Sevillana;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: -30px;
+}
+
+#profile-pria{
+    margin-left: -30px;
+    align-items: center;
+}
+
+.foto-pria{
+    width: 250px;
+    height: 250px;
+    padding: 3px;
+}
+
+/* elemen disamping profile pengantin */
+.elemen-l-p{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    margin-left: -90%;
+    transform: scaleX(-1) rotate(-35deg);
+    margin-top: -7%;
+}
+
+.elemen-r-p{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin-left: -20%;
+    transform:scaleX(-1)  rotate(50deg);
+}
+
+.elemen-l-w{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    margin-left: -90%;
+    transform: scaleX(-1) rotate(-35deg);
+    margin-top: -7%;
+}
+
+.elemen-r-w{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin-left: -20%;
+    transform:scaleX(-1)  rotate(50deg);
+}
+
+/* format teks nya */
+.profile-text h1{
+    font-family: Sail;
+    font-size: 35px;
+}
+
+.profile-text p{
+    font-family: Gabriela;
+    font-size: 20px;
+    color: #921A40;
+}
+
+/* sosmed nya */
+.icon{
+    display: flex;
+    margin-left: -33%;
+    justify-content: center;
+    
+}
+
+.icon img{
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    margin-left: 25%;
+}
+
+.icon a{
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 5px;
+    color: #000000;
+    font-family: Gabriela;
+}
+
+.dan{
+    width: 120px;
+    height: 120px;
+    margin-top: 20%;
+}
+
+#profile-wanita{
+    margin-left: -9%;
+    align-items: center;
+    margin-top: 25%;
+}
+
+.foto-wanita{
+    width: 250px;
+    height: 250px;
+    padding: 3px;
+}
+
+
+/*-------------------- TANGGAL LOKASI --------------------*/
+#tanggal{
+    background-image: url("../images/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: relative; 
+    overflow:hidden; 
+}
+
+#tanggal h2{
+    margin-top: 30px;
+    font-family: Sevillana;
+    font-size: 35px;
+    margin-left: -10%;
+}
+
+#kotak1{
+    margin-top: 5%;
+    margin-right: -21%;
+    justify-content:center;
+}
+
+.kotak2{
+    width: 300px;
+    height: 800px;
+    background-color:none;
+    border:3px solid #FBD2DA;
+    padding: 20px;
+    margin: 2%;
+    border-radius: 120px;
+    box-shadow: black 2px;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2), 2px 2px 2px 2px rgba(0,0,0,0.19);
+}
+
+.waktu{
+    display: flex;
+}
+
+.waktu img{
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    margin-left: 10%;
+}
+
+.kotak-text{
+    margin-top:-2px;
+    padding: 30px;
+    font-family: Gabriela;
+}
+
+.kotak-text h3{
+    font-family: Elsie Swash Caps;
+    font-size: 30px;
+}
+
+.tanggal{
+    font-size: 20px;
+
+}
+
+.waktu p{
+    font-size: 20px;
+    margin-left: 2%;
+    color: #921A40;
+}
+
+.alamat{
+    font-size: 15px;
+}
+
+.btn-akad{
+    position: relative;
+    background-color: #FDCEDF;
+    font-family: Gabriela;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Gabriela;
+}
+
+.btn-akad:hover{
+    background-color: #f7a1c1;
+}
+
+iframe {
+    width: auto;
+    border: none;
+    margin-left: -35px;
+    border-radius: 15px;
+}
+
+/*-------------------- GALERI --------------------*/
+#galeri {
+    background-image: url("../images/bg3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    display: block;
+    position: relative; 
+    overflow:hidden; 
+}
+
+.elemen-galeri-r{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-top:-30px;
+}
+
+.elemen-galeri-l{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-top:-30px;
+    margin-left:-55%;
+    transform:scaleX(-1);
+}
+
+#galeri h2 {
+    font-family: Sevillana;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: -30px;
+}
+
+#galeri p {
+    font-size: 15px;
+    font-family: Gabriela;
+    padding: 30px;
+    margin-left: -30px;
+}
+
+.galeri-container {
+    width: 100%;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    position: relative;
+    margin-top: -3px;
+    text-align: center;
+    display: flex;
+    margin-left: -6%;
+}
+
+.galeri {
+    padding: 10px;
+}
+
+.galeri-container img {
+    width: 170px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#galeri video{
+    position: relative;
+    margin-top: -125%;
+    margin-left: -30px;
+    width: 90%;
+    height: 90%;
+}
+
+#galeri iframe {
+    width: auto;
+    border: none;
+   
+}
+
+/*-------------------- STORY --------------------*/
+#story {
+    background-image: url("../images/bg4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    display: block;
+    position: relative; 
+    overflow:hidden; 
+}
+
+.elemen-story-br{
+    height: 200px;
+    width: 200px;
+    transform: scaleY(-1);
+    margin-top:116%;
+    position: absolute;
+}
+
+.elemen-story-bl{
+    height: 200px;
+    width: 200px;
+    transform: scaleY(-1) scaleX(-1);
+    margin-top:116%;
+    margin-left: -55%;
+    position: absolute;
+}
+#story h2 {
+    font-family: Sevillana;
+    font-size: 30px;
+    margin-top: 3%;
+    margin-left: -30px;
+}
+
+
+.kotak-story{
+    width: 100%;
+    height: 180px;
+    background-color:none;
+    border:1px solid #000000;
+    border-radius: 20px;
+    box-shadow: black 2px;
+    text-align: center;
+    padding: 0px;
+    margin-top: 10px;;
+    overflow: hidden;
+}
+
+.isi-story{
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.isi-story img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.th2022{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: Gabriela;
+}
+
+.th2023{
+    margin-top: 20px;
+    padding-left: 40px;
+    font-size: 17px;
+    font-family: Gabriela;
+}
+
+.th2024{
+    margin-top: 30px;
+    padding-left: 60px;
+    font-size: 17px;
+    font-family: Gabriela;
+}
+
+/*-------------------- TURUT MENGUNDANG --------------------*/
+#tamu {
+    background-image: url("../images/bg5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: relative; 
+    overflow:hidden; 
+}
+
+#tamu h2 {
+    font-family: Sevillana;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: -30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+    font-family: Gabriela;
+    font-size: 15px;
+}
+
+th {
+    background-color: #FDCEDF;
+    font-family: Elsie Swash Caps;
+}
+
+/*-------------------- RSVP --------------------*/
+#rsvp {
+    background-image: url("../images/bg7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: block;
+    position: relative; 
+    overflow:hidden; 
+}
+
+#rsvp-isi {
+    display: none;
+    background-image: url("../images/bg7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+
+.kotak-rsvp {
+    width: 300px;
+    height: 600px;
+    background-color: none;
+    border: 1px solid #000000;
+    text-align:left;
+    padding: 20px;
+    margin-top: 3%;
+    margin-left: 5px;
+    border-radius: 20px;
+    box-shadow: #000000 2px;
+    background-color: #FDCEDF;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2), 2px 2px 2px 2px rgba(0,0,0,0.19);
+}
+
+.kotak-rsvp h3{
+    font-family: Elsie Swash Caps;
+    font-size: 20px;
+    text-align:center;
+}
+
+.rsvp-text button {
+    font-size: 17px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FDCEDF;
+    cursor: pointer;
+    font-family: Gabriela;
+    font-size: 15px;
+}
+
+.rsvp-text button:hover {background-color: #f7a1c1;}
+
+.rsvp-text{
+    margin-left: -30px;
+    padding: 10px;
+}
+
+.rsvp-text h2 {
+    font-family: Sevillana;
+    font-size: 30px;
+}
+
+.rsvp-text p {
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+form {
+    border: black;
+    text-align: left;
+}
+
+form label {
+    font-family: Gabriela;
+    font-size: 15px;
+}
+
+.rsvp-input{
+    width: 200px;
+    height: 20px;
+}
+
+.rsvp-inputtelp{
+    width: 185px;
+    height: 20px;
+}
+
+option{
+    font-family: Gabriela;
+    font-SIZE: 10px;
+}
+
+
+.textbox, .radiobtn, .checkbox, .selectbox, .textarea, .submitbtn {
+    margin-bottom: 10px;
+}
+
+.submitbtn {
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 30px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-family: Gabriela;
+    font-size: 15px;
+}
+
+.submitbtn:hover {background-color: #fa9fc0;}
+
+/*-------------------- HADIAH --------------------*/
+#hadiah {
+    background-image: url("../images/bg7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    display: block;
+    position: relative; 
+    overflow:hidden; 
+}
+
+.kotak-hadiah{
+    width: 300px;
+    height: 200px;
+    background-color:#ffffff;
+    border:1px solid #000000;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 5px;
+    border-radius: 20px;
+    box-shadow: black 2px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.rekening{
+    display: flex;
+    
+}
+
+.text-hadiah{
+    font-size: 20px;
+    margin-top:-2px;
+}
+
+#hadiah h2{
+    font-family: Sevillana;
+    font-size: 30px;
+    margin-left: -25px;
+}
+
+#hadiah p{
+    font-family: Gabriela;
+}
+
+#hadiah h4{
+    font-family: Elsie Swash Caps;
+    font-size: 20px;
+    margin-left: -10px;
+}
+
+.text-hadiah img{
+    width: 100px;
+    height: 100px;
+}
+
+.rekening{
+    margin-left: 18px;
+}
+.btn-salin{
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 15%;
+    padding-right: 3%;
+    font-family: Gabriela;
+}
+
+/*-------------------- PESAN DAN DOA --------------------*/
+
+#pesan {
+    background-image: url("../images/bg7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    display: block;
+    position: relative; 
+    overflow:hidden; 
+}
+
+#pesan h2{
+    font-family: Sevillana;
+    font-size: 30px;
+    margin-left: -30px;
+}
+
+.input-pesan{
+    width: 300px;
+    height: 500px;
+    background-color:#FDCEDF;
+    border:1px solid #000000;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 5px;
+    border-radius: 20px;
+    box-shadow: black 2px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.formPesan{
+    padding-top: 10px;
+}
+
+.nama-pesan{
+    width: 290px;
+    height: 30px;
+    border-radius: 5px;
+    border:none;
+    padding-left: 10px;
+    font-family: Gabriela;
+}
+
+.alamat-pesan{
+    width: 290px;
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    padding-left: 10px;
+    font-family: Gabriela;
+}
+
+.textbox-pesan{
+    width: 290px;
+    height: 60px;
+    border-radius: 5px;
+    border:none;
+    padding-left: 10px;
+    font-family: Gabriela;
+}
+
+.submit-pesan{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    background-color: #fba7c6;
+    font-family: Gabriela;
+}
+
+.submit-pesan:hover {background-color: #d27396;}
+
+#tampilkanPesan{
+    text-align: left;
+}
+
+/*-------------------- TERIMAKASIH --------------------*/
+#terimakasih {
+    background-image: url("../images/bg5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: block;
+    position: relative; 
+    overflow:hidden; 
+}
+
+#terimakasih h1{
+    margin-top: 10%;
+    font-family: Sail;
+    font-size: 50px;
+    color: #921A40;
+    margin-top: 15%;
+    margin-left: -30px;
+}
+
+#terimakasih p{
+    font-family: Gabriela;
+    font-size: 20px;
+    color: #000000;
+    padding: 10px;
+    margin-left: -45px;
+}
+
+.elemen-tq-l{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom:-30px;
+    margin-left:-260px;
+    transform:rotate(35deg);
+}
+
+/* ------------- ANIMASI -----------*/
+
+/* COVER
+img-l-top animasi */
+@keyframes smoothSway {
+    0% {
+        transform: scaleY(-1) rotate(35deg);
+    }
+    25% {
+        transform: scaleY(-1) rotate(32deg);
+    }
+    50% {
+        transform: scaleY(-1) rotate(30deg);
+    }
+    75% {
+        transform: scaleY(-1) rotate(32deg);
+    }
+    100% {
+        transform: scaleY(-1) rotate(35deg);
+    }
+}
+
+/* img-r-top animasi*/
+.img-r-top {
+    animation: smoothSwayRight 4s infinite ease-in-out;
+}
+
+@keyframes smoothSwayRight {
+    0% {
+        transform: scaleY(-1) rotate(-35deg);
+    }
+    25% {
+        transform: scaleY(-1) rotate(-32deg);
+    }
+    50% {
+        transform: scaleY(-1) rotate(-30deg);
+    }
+    75% {
+        transform: scaleY(-1) rotate(-32deg);
+    }
+    100% {
+        transform: scaleY(-1) rotate(-35deg);
+    }
+}
+
+/* img-l-bottom animasi*/
+.img-l-bottom {
+    animation: smoothSwayBottomLeft 4s infinite ease-in-out;
+}
+
+@keyframes smoothSwayBottomLeft {
+    0% {
+        transform: rotate(35deg);
+    }
+    25% {
+        transform: rotate(32deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(32deg);
+    }
+    100% {
+        transform: rotate(35deg);
+    }
+}
+
+/* img-r-bottom animasi */
+.img-r-bottom {
+    animation: smoothSwayBottomRight 4s infinite ease-in-out;
+}
+
+@keyframes smoothSwayBottomRight {
+    0% {
+        transform: rotate(-35deg);
+    }
+    25% {
+        transform: rotate(-32deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(-32deg);
+    }
+    100% {
+        transform: rotate(-35deg);
+    }
+}
+
+
