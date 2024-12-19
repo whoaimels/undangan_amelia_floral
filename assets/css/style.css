@@ -3,11 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
+
 
 /*-------------------- COVER --------------------*/
 #cover{
@@ -19,29 +21,36 @@
     position: relative;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+   
 }
+
 
 #cover-text{
     text-align: center;
-    margin-left: -15px;
-    padding-top: 100px;
 }
+
 
 #cover-text h1{
     font-family: Sail;
     font-size: 50px;
 }
 
+
 #cover-text p{
     font-family: Gabriela;
     font-size: 15px;
 }
+
 
 #cover-text h3{
     font-family: Elsie Swash Caps;
     font-size: 18px;
     opacity: (0.9);
 }
+
 
 .btn{
     position: relative;
@@ -57,7 +66,9 @@
     cursor: pointer;
 }
 
+
 .btn:hover {background-color: #f7a1c1;}
+
 
 /* ELEMEN COVER */
 .img-l-top{
@@ -66,8 +77,9 @@
     position: absolute;
     left: -110px;
     top:-230px;
-    transform: scaleY(-1) rotate(40deg); 
+    transform: scaleY(-1) rotate(40deg);
 }
+
 
 .img-r-top{
     width: 200px;
@@ -75,8 +87,9 @@
     position: absolute;
     right: -110px;
     top:-230px;
-    transform: scaleY(-1) rotate(-40deg); 
+    transform: scaleY(-1) rotate(-40deg);
 }
+
 
 .img-l-bottom {
     width: 200px;
@@ -84,8 +97,9 @@
     position: absolute;
     left: -110px;
     bottom:-30px;
-    transform:rotate(40deg); 
+    transform:rotate(40deg);
 }
+
 
 .img-r-bottom {
     width: 200px;
@@ -93,13 +107,15 @@
     position: absolute;
     right: -110px;
     bottom:-30px;
-    transform:rotate(-40deg); 
+    transform:rotate(-40deg);
 }
 
+
 .img-l-top,.img-r-top,.img-l-bottom, .img-r-bottom {
-    animation: smoothSway 4s infinite ease-in-out; 
-    transform-origin: bottom center; 
+    animation: smoothSway 4s infinite ease-in-out;
+    transform-origin: bottom center;
 }
+
 
 /*-------------------- INTRO --------------------*/
 #ctrlmusik{
@@ -111,10 +127,12 @@
     z-index: 10;
 }
 
+
 #imgmusik{
     width: 80%;
     height: 80%;
 }
+
 
 .box-full {
     width: 100%;
@@ -124,6 +142,7 @@
     padding: 15px;
 }
 
+
 .box-full2 {
     width: 100%;
     height: 80vh;
@@ -131,6 +150,7 @@
     text-align: center;
     padding: 15px;
 }
+
 
 .box-full3 {
     width: 100%;
@@ -140,6 +160,7 @@
     padding: 15px;
 }
 
+
 .box-full4 {
     width: 100%;
     height: 200vh;
@@ -147,6 +168,7 @@
     text-align: center;
     padding: 15px;
 }
+
 
 .box-full5{
     width: 100%;
@@ -157,9 +179,12 @@
 }
 
 
-#isi{ 
+
+
+#isi{
     display: none;
 }
+
 
 #intro{
     background-image: url('../images/cover.jpg') ;
@@ -168,30 +193,36 @@
     background-position:  center;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
 }
 
-.container-bingkai{
-    margin-left: -110%;
-    margin-top: 40px;
+
+.container-bingkai {
+    position: relative; 
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
-.intro-bingkai{
+
+.intro-bingkai,
+.intro-foto {
+    position: absolute; 
     width: 400px;
     height: 400px;
-    position: absolute;
-    z-index: 2;
 }
 
-.intro-foto{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    z-index: 1;
+.intro-bingkai {
+    z-index: 2; 
 }
 
-#container-bingkai {
-    margin-left: -400px;
-    margin-top: 35px;
+.intro-foto {
+    z-index: 1; 
 }
+
 
 
 .elemen2-r{
@@ -204,6 +235,7 @@
     transform: scaleX(-1) rotate(-5deg);
 }
 
+
 .elemen2-l{
     position: absolute;
     width: 300px;
@@ -213,6 +245,7 @@
     left: -70px;
     transform:rotate(-5deg);
 }
+
 
 /*navigasi*/
 #nav{
@@ -224,12 +257,14 @@
     z-index: 7;
 }
 
+
 #nav ul{
     display: inline-block;
     background-color: #FDCEDF;  
     padding: 0px;
     border-radius: 20px;
-} 
+}
+
 
 #nav ul li{
     display: inline-block;
@@ -238,69 +273,81 @@
     text-decoration: none;
 }
 
+
 #nav ul li:hover{
     background-color: #f7a1c1;
     border-radius: 20px;
 }
+
 
 #nav img{
     padding: -10px;
 }
 
 
+
+
 /*-------------------- QUOTES --------------------*/
-#quotes{
+#quotes {
     background-color: #FDE2E7;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
-    display: block;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    position: relative;   
+    padding: 20px; 
+    position: relative;
+    max-width: 800px; 
+    margin: 0 auto;
 }
 
-.elemen-t-quotes{
+.elemen-t-quotes {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    margin-left: -250px;
-    margin-top: -50px;
-    transform: scaleX(-1) rotate(-90deg);
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    left: 10px;
+    transform: rotate(-90deg);
 }
 
-.elemen-b-quotes{
+.elemen-b-quotes {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    margin-right: -50%;
-    margin-top: 120%;
-    transform: scaleX(-1) rotate(90deg);
+    width: 100px;
+    height: 100px;
+    bottom: -10px;
+    right: 10px;
+    transform: rotate(90deg);
 }
 
-.ornamen1{
-    width: 200px;
-    top: 5px;
+.ornamen1 {
+    width: 150px;
     position: absolute;
-    margin-left: -115px;
-
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.ornamen2{
-    width: 200px;
-    bottom: 5px;
+.ornamen2 {
+    width: 150px;
     position: absolute;
-    margin-left: -115px;
-    transform: scaleY(-1);
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) scaleY(-1);
 }
 
-.quotes-text{
+.quotes-text {
     position: relative;
     font-size: 20px;
-    padding: 50px;
-    padding-left: 20px;
-    margin-top: 125px;
+    text-align: center;
     color: #921A40;
+    margin: 20px auto;
+    line-height: 1.6;
+    padding: 0 15px;
 }
+
 
 /*-------------------- PROFILE --------------------*/
 #profile{
@@ -309,9 +356,10 @@
     background-size: cover;
     background-position: left;
     display: block;
-    position: relative; 
-    overflow:hidden; 
+    position: relative;
+    overflow:hidden;
 }
+
 
 #profile h2{
     font-family: Sevillana;
@@ -320,10 +368,12 @@
     margin-left: -30px;
 }
 
+
 #profile-pria{
     margin-left: -30px;
     align-items: center;
 }
+
 
 .foto-pria{
     width: 250px;
@@ -331,40 +381,45 @@
     padding: 3px;
 }
 
+
 /* elemen disamping profile pengantin */
 .elemen-l-p{
     width: 200px;
     height: 300px;
     position: absolute;
-    margin-left: -90%;
+    margin-left: -570px;
     transform: scaleX(-1) rotate(-35deg);
     margin-top: -7%;
 }
+
 
 .elemen-r-p{
     width: 250px;
     height: 250px;
     position: absolute;
-    margin-left: -20%;
+    margin-left: 70px;
     transform:scaleX(-1)  rotate(50deg);
 }
+
 
 .elemen-l-w{
     width: 200px;
     height: 300px;
     position: absolute;
-    margin-left: -90%;
+    margin-left: -570px;
     transform: scaleX(-1) rotate(-35deg);
     margin-top: -7%;
 }
+
 
 .elemen-r-w{
     width: 250px;
     height: 250px;
     position: absolute;
-    margin-left: -20%;
+    margin-left: 100px;
     transform:scaleX(-1)  rotate(50deg);
 }
+
 
 /* format teks nya */
 .profile-text h1{
@@ -372,19 +427,22 @@
     font-size: 35px;
 }
 
+
 .profile-text p{
     font-family: Gabriela;
     font-size: 20px;
     color: #921A40;
 }
 
+
 /* sosmed nya */
 .icon{
     display: flex;
     margin-left: -33%;
     justify-content: center;
-    
+   
 }
+
 
 .icon img{
     width: 18px;
@@ -392,6 +450,7 @@
     margin-top: 2px;
     margin-left: 25%;
 }
+
 
 .icon a{
     font-size: 18px;
@@ -401,17 +460,20 @@
     font-family: Gabriela;
 }
 
+
 .dan{
     width: 120px;
     height: 120px;
     margin-top: 20%;
 }
 
+
 #profile-wanita{
     margin-left: -9%;
     align-items: center;
     margin-top: 25%;
 }
+
 
 .foto-wanita{
     width: 250px;
@@ -420,46 +482,61 @@
 }
 
 
+
+
 /*-------------------- TANGGAL LOKASI --------------------*/
-#tanggal{
+#tanggal {
     background-image: url("../images/bg2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: block;
-    position: relative; 
-    overflow:hidden; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-#tanggal h2{
+
+#tanggal h2 {
     margin-top: 30px;
-    font-family: Sevillana;
+    font-family: 'Sevillana', cursive;
     font-size: 35px;
-    margin-left: -10%;
+    color: #333;
+    text-align: center;
 }
 
-#kotak1{
-    margin-top: 5%;
-    margin-right: -21%;
-    justify-content:center;
+
+#kotak1 {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; 
 }
 
-.kotak2{
+
+.kotak2 {
     width: 300px;
-    height: 800px;
+    height: 900px;
     background-color:none;
-    border:3px solid #FBD2DA;
+    border: 3px solid #FBD2DA;
     padding: 20px;
     margin: 2%;
     border-radius: 120px;
-    box-shadow: black 2px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2), 
+                2px 2px 2px 2px rgba(0, 0, 0, 0.19);
     text-align: center;
-    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2), 2px 2px 2px 2px rgba(0,0,0,0.19);
 }
+
+
 
 .waktu{
     display: flex;
 }
+
 
 .waktu img{
     width: 20px;
@@ -468,21 +545,26 @@
     margin-left: 10%;
 }
 
+
 .kotak-text{
     margin-top:-2px;
     padding: 30px;
     font-family: Gabriela;
 }
 
+
 .kotak-text h3{
     font-family: Elsie Swash Caps;
     font-size: 30px;
 }
 
+
 .tanggal{
     font-size: 20px;
 
+
 }
+
 
 .waktu p{
     font-size: 20px;
@@ -490,9 +572,11 @@
     color: #921A40;
 }
 
+
 .alamat{
     font-size: 15px;
 }
+
 
 .btn-akad{
     position: relative;
@@ -508,9 +592,11 @@
     font-family: Gabriela;
 }
 
+
 .btn-akad:hover{
     background-color: #f7a1c1;
 }
+
 
 iframe {
     width: auto;
@@ -519,6 +605,7 @@ iframe {
     border-radius: 15px;
 }
 
+
 /*-------------------- GALERI --------------------*/
 #galeri {
     background-image: url("../images/bg3.png");
@@ -526,16 +613,13 @@ iframe {
     background-size: cover;
     background-position: left bottom;
     display: block;
-    position: relative; 
-    overflow:hidden; 
+    position: relative;
+    overflow:hidden;
 }
 
-.elemen-galeri-r{
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    margin-top:-30px;
-}
+
+
+
 
 .elemen-galeri-l{
     width: 200px;
@@ -546,12 +630,14 @@ iframe {
     transform:scaleX(-1);
 }
 
+
 #galeri h2 {
     font-family: Sevillana;
     font-size: 30px;
     margin-top: 5%;
     margin-left: -30px;
 }
+
 
 #galeri p {
     font-size: 15px;
@@ -560,10 +646,11 @@ iframe {
     margin-left: -30px;
 }
 
+
 .galeri-container {
     width: 100%;
-    overflow-x: hidden; 
-    overflow-y: hidden; 
+    overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
     margin-top: -3px;
     text-align: center;
@@ -571,9 +658,11 @@ iframe {
     margin-left: -6%;
 }
 
+
 .galeri {
     padding: 10px;
 }
+
 
 .galeri-container img {
     width: 170px;
@@ -582,19 +671,22 @@ iframe {
     border-radius: 20px;
 }
 
+
 #galeri video{
     position: relative;
-    margin-top: -125%;
+    margin-top: -50%;
     margin-left: -30px;
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
 }
+
 
 #galeri iframe {
     width: auto;
     border: none;
    
 }
+
 
 /*-------------------- STORY --------------------*/
 #story {
@@ -603,9 +695,10 @@ iframe {
     background-size: cover;
     background-position: right top;
     display: block;
-    position: relative; 
-    overflow:hidden; 
+    position: relative;
+    overflow:hidden;
 }
+
 
 .elemen-story-br{
     height: 200px;
@@ -614,6 +707,7 @@ iframe {
     margin-top:116%;
     position: absolute;
 }
+
 
 .elemen-story-bl{
     height: 200px;
@@ -631,6 +725,8 @@ iframe {
 }
 
 
+
+
 .kotak-story{
     width: 100%;
     height: 180px;
@@ -644,17 +740,20 @@ iframe {
     overflow: hidden;
 }
 
+
 .isi-story{
     display: flex;
     padding: 10px;
     margin-top: 10px;
 }
 
+
 .isi-story img{
     width: 150px;
     height: 150px;
     border-radius: 100%;
 }
+
 
 .th2022{
     margin-top: 30px;
@@ -663,12 +762,14 @@ iframe {
     font-family: Gabriela;
 }
 
+
 .th2023{
     margin-top: 20px;
     padding-left: 40px;
     font-size: 17px;
     font-family: Gabriela;
 }
+
 
 .th2024{
     margin-top: 30px;
@@ -677,6 +778,7 @@ iframe {
     font-family: Gabriela;
 }
 
+
 /*-------------------- TURUT MENGUNDANG --------------------*/
 #tamu {
     background-image: url("../images/bg5.png");
@@ -684,9 +786,10 @@ iframe {
     background-size: cover;
     background-position: center;
     display: block;
-    position: relative; 
-    overflow:hidden; 
+    position: relative;
+    overflow:hidden;
 }
+
 
 #tamu h2 {
     font-family: Sevillana;
@@ -695,12 +798,14 @@ iframe {
     margin-left: -30px;
 }
 
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     margin-left: -15px;
 }
+
 
 th, td {
     border: 1px solid #000000;
@@ -710,10 +815,12 @@ th, td {
     font-size: 15px;
 }
 
+
 th {
     background-color: #FDCEDF;
     font-family: Elsie Swash Caps;
 }
+
 
 /*-------------------- RSVP --------------------*/
 #rsvp {
@@ -722,9 +829,10 @@ th {
     background-size: cover;
     background-position:center;
     display: block;
-    position: relative; 
-    overflow:hidden; 
+    position: relative;
+    overflow:hidden;
 }
+
 
 #rsvp-isi {
     display: none;
@@ -732,7 +840,11 @@ th {
     background-repeat: no-repeat;
     background-size: cover;
     background-position:top;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
 }
+
 
 .kotak-rsvp {
     width: 300px;
@@ -742,18 +854,24 @@ th {
     text-align:left;
     padding: 20px;
     margin-top: 3%;
-    margin-left: 5px;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
     border-radius: 20px;
     box-shadow: #000000 2px;
     background-color: #FDCEDF;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2), 2px 2px 2px 2px rgba(0,0,0,0.19);
 }
 
+
 .kotak-rsvp h3{
     font-family: Elsie Swash Caps;
     font-size: 20px;
     text-align:center;
 }
+
 
 .rsvp-text button {
     font-size: 17px;
@@ -767,43 +885,53 @@ th {
     font-size: 15px;
 }
 
+
 .rsvp-text button:hover {background-color: #f7a1c1;}
+
 
 .rsvp-text{
     margin-left: -30px;
     padding: 10px;
 }
 
+
 .rsvp-text h2 {
     font-family: Sevillana;
     font-size: 30px;
 }
 
+
 .rsvp-text p {
     font-size: 20px;
     padding: 20px;
 
+
 }
+
 
 form {
     border: black;
     text-align: left;
 }
 
+
 form label {
     font-family: Gabriela;
     font-size: 15px;
 }
+
 
 .rsvp-input{
     width: 200px;
     height: 20px;
 }
 
+
 .rsvp-inputtelp{
     width: 185px;
     height: 20px;
 }
+
 
 option{
     font-family: Gabriela;
@@ -811,9 +939,12 @@ option{
 }
 
 
+
+
 .textbox, .radiobtn, .checkbox, .selectbox, .textarea, .submitbtn {
     margin-bottom: 10px;
 }
+
 
 .submitbtn {
     padding: 5px;
@@ -828,7 +959,9 @@ option{
     font-size: 15px;
 }
 
+
 .submitbtn:hover {background-color: #fa9fc0;}
+
 
 /*-------------------- HADIAH --------------------*/
 #hadiah {
@@ -837,33 +970,38 @@ option{
     background-size: cover;
     background-position:top;
     display: block;
-    position: relative; 
-    overflow:hidden; 
+    position: relative;
+    overflow:hidden;
 }
+
 
 .kotak-hadiah{
     width: 300px;
-    height: 200px;
+    height: 300px;
     background-color:#ffffff;
     border:1px solid #000000;
     padding: 20px;
     margin-top: 5%;
-    margin-left: 5px;
+    margin-left: 25%;
     border-radius: 20px;
     box-shadow: black 2px;
     text-align: center;
     font-size: 15px;
+    justify-content: center; 
 }
+
 
 .rekening{
     display: flex;
-    
+   
 }
+
 
 .text-hadiah{
     font-size: 20px;
-    margin-top:-2px;
+    margin-top: 40px;
 }
+
 
 #hadiah h2{
     font-family: Sevillana;
@@ -871,9 +1009,11 @@ option{
     margin-left: -25px;
 }
 
+
 #hadiah p{
     font-family: Gabriela;
 }
+
 
 #hadiah h4{
     font-family: Elsie Swash Caps;
@@ -881,10 +1021,12 @@ option{
     margin-left: -10px;
 }
 
+
 .text-hadiah img{
     width: 100px;
     height: 100px;
 }
+
 
 .rekening{
     margin-left: 18px;
@@ -899,7 +1041,9 @@ option{
     font-family: Gabriela;
 }
 
+
 /*-------------------- PESAN DAN DOA --------------------*/
+
 
 #pesan {
     background-image: url("../images/bg7.png");
@@ -907,15 +1051,21 @@ option{
     background-size: cover;
     background-position:bottom;
     display: block;
-    position: relative; 
-    overflow:hidden; 
+    position: relative;
+    overflow:hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
 }
+
 
 #pesan h2{
     font-family: Sevillana;
     font-size: 30px;
     margin-left: -30px;
 }
+
 
 .input-pesan{
     width: 300px;
@@ -931,9 +1081,11 @@ option{
     font-size: 15px;
 }
 
+
 .formPesan{
     padding-top: 10px;
 }
+
 
 .nama-pesan{
     width: 290px;
@@ -944,6 +1096,7 @@ option{
     font-family: Gabriela;
 }
 
+
 .alamat-pesan{
     width: 290px;
     height: 40px;
@@ -952,6 +1105,7 @@ option{
     padding-left: 10px;
     font-family: Gabriela;
 }
+
 
 .textbox-pesan{
     width: 290px;
@@ -962,6 +1116,7 @@ option{
     font-family: Gabriela;
 }
 
+
 .submit-pesan{
     width: 300px;
     height: 40px;
@@ -971,11 +1126,14 @@ option{
     font-family: Gabriela;
 }
 
+
 .submit-pesan:hover {background-color: #d27396;}
+
 
 #tampilkanPesan{
     text-align: left;
 }
+
 
 /*-------------------- TERIMAKASIH --------------------*/
 #terimakasih {
@@ -984,9 +1142,10 @@ option{
     background-size: cover;
     background-position:center;
     display: block;
-    position: relative; 
-    overflow:hidden; 
+    position: relative;
+    overflow:hidden;
 }
+
 
 #terimakasih h1{
     margin-top: 10%;
@@ -997,6 +1156,7 @@ option{
     margin-left: -30px;
 }
 
+
 #terimakasih p{
     font-family: Gabriela;
     font-size: 20px;
@@ -1004,6 +1164,7 @@ option{
     padding: 10px;
     margin-left: -45px;
 }
+
 
 .elemen-tq-l{
     width: 200px;
@@ -1014,7 +1175,9 @@ option{
     transform:rotate(35deg);
 }
 
+
 /* ------------- ANIMASI -----------*/
+
 
 /* COVER
 img-l-top animasi */
@@ -1036,10 +1199,12 @@ img-l-top animasi */
     }
 }
 
+
 /* img-r-top animasi*/
 .img-r-top {
     animation: smoothSwayRight 4s infinite ease-in-out;
 }
+
 
 @keyframes smoothSwayRight {
     0% {
@@ -1059,10 +1224,12 @@ img-l-top animasi */
     }
 }
 
+
 /* img-l-bottom animasi*/
 .img-l-bottom {
     animation: smoothSwayBottomLeft 4s infinite ease-in-out;
 }
+
 
 @keyframes smoothSwayBottomLeft {
     0% {
@@ -1082,10 +1249,12 @@ img-l-top animasi */
     }
 }
 
+
 /* img-r-bottom animasi */
 .img-r-bottom {
     animation: smoothSwayBottomRight 4s infinite ease-in-out;
 }
+
 
 @keyframes smoothSwayBottomRight {
     0% {
@@ -1104,5 +1273,3 @@ img-l-top animasi */
         transform: rotate(-35deg);
     }
 }
-
-
